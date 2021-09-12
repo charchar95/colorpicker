@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "async": "^3.2.1",
     "body-parser": "^1.19.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
@@ -12,14 +11,13 @@
     "method": "^2.0.0",
     "method-override": "^3.0.0",
     "override": "0.0.1",
-    "path": "^0.12.7",
     "redis": "^3.1.2",
     "serve": "^12.0.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node index",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
