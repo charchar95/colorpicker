@@ -1,15 +1,29 @@
 {
-  "name": "colorsaversept",
+  "name": "colorpicker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method": "^2.0.0",
+    "method-override": "^3.0.0",
+    "override": "0.0.1",
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charchar95/colorpicker.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "redis": "^3.1.2"
-  }
+  "bugs": {
+    "url": "https://github.com/charchar95/colorpicker/issues"
+  },
+  "homepage": "https://github.com/charchar95/colorpicker#readme"
 }
