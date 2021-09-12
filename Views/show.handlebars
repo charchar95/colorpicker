@@ -1,0 +1,20 @@
+<h1></h1>
+<title>Show Page</title>
+</head>  
+<body>
+  <div class="show-page">
+      <h1> {{user.color_name}} </h1>
+    <div class="show-id" style="background: {{user.value}};">
+    </div>
+    <div class="actions"> 
+    </div>
+    <h2>{{user.value}}</h2>
+  <form  method="POST" action="/delete/{{user.id}}?_method=DELETE">
+    <input type="submit" value="DELETE">
+    </form>
+ <a href="/">Back</a>
+   </div> 
+  </div>
+</body>
+
+</html>

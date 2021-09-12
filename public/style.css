@@ -45,35 +45,6 @@
     align-items: center;
 }
 
-/* EDIT */
-.edit-id {
-    height: 180px;
-    width: 180px;
-    border-radius: 25px;
-    border: 2px black solid;
-    padding: 25px;
-    margin-top: 45px;
-}
-
-.edit-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 25% 25% 15% 25%;
-    
-}
-
-/* INDEX  */
-.body-container {
-    margin-left: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-
-
  .color-id {
     height: 90px;
     width: 90px;
@@ -95,67 +66,29 @@
     margin: 15% 25% 30% 25%
 }
 
-.login, .center {
-    font: arial;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  
-}
-
-
-.login > h3, a  {
-    color: rgb(139,81,51);
-    font-size: 25px; 
-     font-weight: 600;
-}
-
-hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 7px;
-  } 
 
   .name > a{
     color: black;
     font-size: 15px
 }
 
+.btn-primary{
+    background-color:rgb(52, 115, 48, .8);
+    border: black;
+}
 
-  @-webkit-keyframes wiggle
-  {
-      0% {-webkit-transform: rotateZ(2deg);}
-      50% {-webkit-transform: rotateZ(-2deg);}
-      100% {-webkit-transform: rotateZ(2deg);}
-  }
-  @-moz-keyframes wiggle
-  {
-      0% {-moz-transform: rotateZ(2deg);}
-      50% {-moz-transform: rotateZ(-2deg);}
-      100% {-moz-transform: rotateZ(2deg);}
-  }
-  @-o-keyframes wiggle
-  {
-      0% {-o-transform: rotateZ(2deg);}
-      50% {-o-transform: rotateZ(-2deg);}
-      100% {-o-transform: rotateZ(2deg);}
-  }
-  @keyframes wiggle
-  {
-      0% {transform: rotateZ(2deg);}
-      50% {transform: rotateZ(-2deg);}
-      100% {transform: rotateZ(2deg);}
-  }
-  
-  .name:hover {
-      -webkit-animation: wiggle 0.2s ease-out ;
-      -moz-animation: wiggle 0.2s ease-out ;
-      -o-animation: wiggle 0.2s ease-out ;
-      animation: wiggle 0.2s ease-out ;
-      cursor: pointer;
-  } 
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%
+}
+
+ a  {
+    color: rgb(139,81,51);
+    font-size: 25px; 
+     font-weight: 600;
+}
+
+.btn:hover {
+    background-color: rgb(139,81,51);
+    }

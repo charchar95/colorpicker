@@ -1,0 +1,11 @@
+<div class="search">
+  <h1>Search Your Saved Colors</h1> 
+  </div>
+{{#if error}} <span>{{error}}</span>{{/if}}
+<form method="POST"  action="/search">
+  <div class="form-group">
+    <input type="text" name="color_name" class="form-control" placeholder="Search by Color ID">
+  </div>
+  <input type="submit" class="btn btn-primary pull-right" value="Search">
+</form>
+
