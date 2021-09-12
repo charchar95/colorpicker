@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 
 // APP //
 const app = express();
-// app.use(express.static('public'));
+app.set("port", PORT);
 
 // View Engine
 app.engine('handlebars', exphbs({defaultLayout:'main'}));
