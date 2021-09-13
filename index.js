@@ -31,7 +31,7 @@ app.use('/public', express.static('public'));
 
 // SEARCH //
 app.get('/', ( req, res )=>{
-  res.render('search');
+  res.render('search.handlebars');
   });
 
 // SEARCH PROCESSING // 
@@ -40,7 +40,7 @@ app.post('/search', function(req, res, next){
   
   client.hgetall(id, function(err, obj){
     if(!obj){
-      res.render('search', {
+      res.render('search.handlebars', {
         error: 'Color does not exist'
       });
     } else {
@@ -55,7 +55,7 @@ app.post('/search', function(req, res, next){
 
   // RENDER NEW //
 app.get('/new', (req, res) => {
-  res.render('new');
+  res.render('new.handlebars');
   });
 
 // POST NEW //
