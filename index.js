@@ -3,10 +3,15 @@ const exphbs = require('express-handlebars');
 const methodOverride  = require('method-override');
 const redis = require('redis')
 const bodyParser = require('body-parser');
+const fs = require("fs");
 
+const client = redis.createClient(process.env.REDIS_URL, {
+    tls: {
+        rejectUnauthorized: false
+    }
+});
 
 // REDIS //
-const client = redis.createClient(process.env.REDIS_URL);
 client.on('connect', function() {
   console.log('Connected!');
 });
